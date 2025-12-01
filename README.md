@@ -1,3 +1,11 @@
+# Leaflet 1.9.4 with some fixes
+
+This version of Leaflet is based on 1.9.4. We addressed the following issues we encountered in our project:
+
+- Remove error when zooming (Marker.js, `_animateZoom`)
+
+## Original Readme
+
 Leaflet was created 11 years ago by [Volodymyr Agafonkin](https://agafonkin.com), a Ukrainian citizen living in Kyiv.
 
 Russian bombs are now falling over Volodymyr's hometown. His family, his friends, his neighbours, thousands and thousands of absolutely wonderful people, are either seeking refuge or fighting for their lives.

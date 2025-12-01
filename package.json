@@ -1,6 +1,6 @@
 {
   "name": "leaflet",
-  "version": "1.9.4+1",
+  "version": "1.9.4+2",
   "homepage": "https://leafletjs.com/",
   "description": "JavaScript library for mobile-friendly interactive maps",
   "devDependencies": {
@@ -36,10 +36,7 @@
   "style": "dist/leaflet.css",
   "files": [
     "dist",
-    "src",
-    "!dist/leaflet.zip",
-    "!*.leafdoc",
-    "CHANGELOG.md"
+    "!*.leafdoc"
   ],
   "scripts": {
     "docs": "node ./build/docs.js && node ./build/integrity.js",
@@ -51,8 +48,7 @@
     "watch": "rollup -w -c build/rollup-config.js",
     "uglify": "uglifyjs dist/leaflet-src.js -c -m -o dist/leaflet.js --source-map filename=dist/leaflet.js.map --source-map content=dist/leaflet-src.js.map --source-map url=leaflet.js.map --comments",
     "bundlemon": "bundlemon --subProject js --defaultCompression none && bundlemon --subProject js-gzip --defaultCompression gzip",
-    "serve": "cd docs && bundle exec jekyll serve",
-    "prepare": "husky install"
+    "serve": "cd docs && bundle exec jekyll serve"
   },
   "eslintConfig": {
     "ignorePatterns": [

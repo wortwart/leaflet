@@ -22,7 +22,7 @@ window.L = exports;`;
 
 /** @type {import('rollup').RollupOptions} */
 const config = {
-	input: 'src/Leaflet.js',
+	input: 'src/leaflet.js',
 	output: [
 		{
 			file: pkg.main,

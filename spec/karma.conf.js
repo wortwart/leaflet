@@ -16,7 +16,7 @@ module.exports = function (config) {
 
 	var files = [
 		"spec/before.js",
-		"src/Leaflet.js",
+		"src/leaflet.js",
 		"spec/after.js",
 		"node_modules/happen/happen.js",
 		"node_modules/prosthetic-hand/dist/prosthetic-hand.js",

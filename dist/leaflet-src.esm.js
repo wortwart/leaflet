@@ -1,9 +1,9 @@
 /* @preserve
- * Leaflet 1.9.4+1+main.dbb0741, a JS library for interactive maps. https://leafletjs.com
+ * Leaflet 1.9.4+2+main.96a9b5f, a JS library for interactive maps. https://leafletjs.com
  * (c) 2010-2025 Vladimir Agafonkin, (c) 2010-2011 CloudMade
  */
 
-var version = "1.9.4+1+main.45c02c34";
+var version = "1.9.4+2+main.45c02c34";
 
 /*
  * @namespace Util
@@ -10340,6 +10340,9 @@ var Popup = DivOverlay.extend({
 	},
 
 	_animateZoom: function (e) {
+		if (!this || !this._map) {
+			return;
+		}
 		var pos = this._map._latLngToNewLayerPoint(this._latlng, e.zoom, e.center),
 		    anchor = this._getAnchor();
 		setPosition(this._container, pos.add(anchor));
